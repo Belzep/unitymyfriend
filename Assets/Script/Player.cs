@@ -32,7 +32,7 @@ public class Player : MonoBehaviour {
 
 		if (Input.GetAxis("Horizontal")<-0.1f){
 			transform.localScale = new Vector3(-Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
-			rb2d.velocity= new Vector2(h, 0);
+			rb2d.AddForce ((Vector2.right * speed) * h);
 		}
 
 		if (Input.GetButtonDown("Jump")) {
@@ -40,6 +40,11 @@ public class Player : MonoBehaviour {
 		}
 		//rb2d.AddForce ((Vector2.right * speed) * h);
 
+	}
+
+	void OnTriggerEnter2D(Collider2D other) {
+		if (other.tag == "spike") {
+			Application.LoadLevel ("scene1");}
 	}
 }
 	
