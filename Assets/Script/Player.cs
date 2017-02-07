@@ -8,7 +8,9 @@ public class Player : MonoBehaviour {
 	private float speed=25f;
 	private float jump=150f;
 
-	// Use this for initialization
+	private IEnumerator coroutine;
+
+//	 Use this for initialization
 	void Start () {
 		rb2d = gameObject.GetComponent<Rigidbody2D> ();
 		anim = gameObject.GetComponent<Animator> ();
@@ -42,10 +44,5 @@ public class Player : MonoBehaviour {
 
 	}
 
-	void OnTriggerEnter2D(Collider2D other) {
-		if (other.tag == "spike") {
-			Application.LoadLevel ("scene1");}
-	}
-}
-	
 
+}

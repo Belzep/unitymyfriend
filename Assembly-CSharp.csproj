@@ -45,7 +45,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Script\FollowPath.cs" />
      <Compile Include="Assets\Script\GroundCheck.cs" />
+     <Compile Include="Assets\Script\PathDef.cs" />
      <Compile Include="Assets\Script\Player.cs" />
      <Compile Include="Assets\Script\Walk.cs" />
  <Reference Include="UnityEngine.Networking">
