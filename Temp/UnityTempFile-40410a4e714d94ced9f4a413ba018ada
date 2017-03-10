@@ -83,6 +83,7 @@
 -define:UNITY_EDITOR_64
 -define:UNITY_EDITOR_OSX
 -define:UNITY_TEAM_LICENSE
+'Assets/Script/CameraController.cs'
 'Assets/Script/FollowPath.cs'
 'Assets/Script/GroundCheck.cs'
 'Assets/Script/PathDef.cs'

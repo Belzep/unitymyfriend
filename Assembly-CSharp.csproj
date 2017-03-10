@@ -45,6 +45,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Script\CameraController.cs" />
      <Compile Include="Assets\Script\FollowPath.cs" />
      <Compile Include="Assets\Script\GroundCheck.cs" />
      <Compile Include="Assets\Script\PathDef.cs" />
